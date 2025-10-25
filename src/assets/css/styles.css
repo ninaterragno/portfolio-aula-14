@@ -1,0 +1,44 @@
+header{ /* elemento header*/
+    position: relative;
+    min-height: 100vh;  /* 100% tamanho da tela */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .container{ /* . puxa classe, nesse caso dentro do header*/       
+        z-index: 1;
+        position: relative;
+    }
+
+    .bg-container{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+        padding: 35px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+        border-radius: 10px;
+    }
+}
+
+#particles-js{ /* # se refere ao ID*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* fica atrás do container */
+}
+
+.btn-gradient{  /* estado do botão normal */
+    background: linear-gradient(135deg, #ff7676, #f54ea2);
+    border: none;
+    color: #fff;
+    transition: all 0.3s; 
+
+    &:hover{ /* tribui o estilo quando passa o mouse, & mesma coisa que puxar a classe*/
+        opacity: 0.85;
+    }
+
+}
+
