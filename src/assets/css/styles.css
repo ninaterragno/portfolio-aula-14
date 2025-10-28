@@ -39,6 +39,21 @@ header{ /* elemento header*/
     &:hover{ /* tribui o estilo quando passa o mouse, & mesma coisa que puxar a classe*/
         opacity: 0.85;
     }
-
 }
+
+section{
+    padding: 80px 0; 
+    /* espaçamento 80px em cima e em baixo e 0 laterais */
+}
+
+body{
+    scroll-behavior: smooth; /* suavilzar transição entre setores */
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.bg-gradient-purple{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
 
